@@ -51,7 +51,7 @@ CRAFT can be run directly after decompressing the .zip archive on Windows and Li
 Direct Running on Windows
 ------------------------
 CRAFT has been tested on Windows (Win7,Win8 and Win10)
-> 1. Download the Windows Version of CRAFT  from  [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/CRAFT_wins.zip).
+> 1. Download the Windows Version of CRAFT  from  [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadui.md).
 > 2. Unzip it.
 > 3. Within the folder, double-click **CRAFT.exe**.
 <p align="center">
@@ -62,7 +62,7 @@ CRAFT has been tested on Windows (Win7,Win8 and Win10)
 Direct Running  on Linux
 ------------------------
 CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 and Oracle Server 7.6). Because of system difference of Linux, some dll files might not be included. We have included the missing dll files during our testing. If other dll files are require, they can be downloaded [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/linux-so). And copy the missing dll to CRAFT_linux folder.
-> 1. Download the Linux Version of CRAFT  from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/CRAFT_linux.zip).
+> 1. Download the Linux Version of CRAFT  from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadui.md ).
 > 2. Unzip it.
 > 3. Use commandline : "cd CRAFT-linux-x64" and "./CRAFT" to start running CRAFT.( **Please run CRAFT with command line instead of double clicks on Linux.** )
 <p align="center">
