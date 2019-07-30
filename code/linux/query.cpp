@@ -1503,7 +1503,7 @@ int main(int argc, char* argv[])
     vec_embed.clear();
     split(allID, ",", vec_embed);
 
-    std::cout<<'\n'<<vec_embed.size()<<'\n';
+	//std::cout<<'\n'<<vec_embed.size()<<'\n';
     vec_names.clear();
     split(allkey, ",", vec_names);
     allID = "";
