@@ -10,7 +10,7 @@ Thank you for downloading CRAFT, a tool for Compact Representations of large-sca
 **Description of the framework of CRAFT:**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/image/CRAFTworkflow.png"/ width="600" height="300">
+  <img src="./image/CRAFTworkflow.png"/ width="600" height="300">
 </p>
 
 CRAFT is composed of two modules:
