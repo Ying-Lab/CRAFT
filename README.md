@@ -34,11 +34,11 @@ Three pre-computed compact databases
 
 Currently, we pre-compacted the three databases
 
-(1) All the 139,562 Refseq assembly nucleotide genomes, updated by June, 2018. The size of the database is compacted from >=2TB to 3GB.--*(Since this database requires 3GB of space, it is not included in the zip file. During the running of CRAFT, if the user selected the button of "Refseq complete genome", the download webpage will be automatic linked or [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/download-refseq.md)  to download and save in ./CRAFT-linux-x64/Refseq folder or ./CRAFT_wins_1.0/Refseq. )*
+(1) All the 139,576 Refseq assembly nucleotide genomes, updated by June, 2018. The size of the database is compacted from 829.60GB(.fa) to 3GB.--*(Since this database requires 3GB of space, it is not included in the zip file. During the running of CRAFT, if the user selected the button of "Refseq complete genome", the download webpage will be automatic linked or [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/download-refseq.md)  to download and save in ./CRAFT-linux-x64/Refseq folder or ./CRAFT_wins_1.0/Refseq. )*
 
-(2)The 6593 Refseq representative nucleotide genomes, updated by June, 2018. The size of the database is compacted from ~150GB to 148M.--*(This database is included in the zip file.)*
+(2)The 7,106 Refseq representative nucleotide genomes, updated by June, 2018. The size of the database is compacted from 376.38GB(.fa) to 148M.--*(This database is included in the zip file.)*
 
-(3)The 2,338HMP1-II metagenomic samples, which includes 309 skin samples, **234 Vaginal samples, 1259 Oral samples and 553 Gutsamples,** from 4.5TB (SRA data) to 50.4 MB. The sample information is [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/HMP1-II-info.txt).--*(This database is included in the zip file.)*
+(3)The 2,355HMP1-II metagenomic samples, which includes **309 skin samples, 234 Vaginal samples, 1,259 Oral samples and 553 Gutsamples,** from 7.13TB (.sra) to 50.4 MB. The sample information is [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/HMP1-II-info.txt).--*(This database is included in the zip file.)*
 
 
 Direct Running
@@ -88,7 +88,7 @@ The graphical user interface has the layout shown in the above figure, containin
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/image/run.jpg)   :  Run CRAFT to compare the query file with the selected database.
 
-2、Green area : Select the database to compare.
+2、Green area : Select the database to compare or build your database to compare.
 
 3、Yellow area : Select the subgroup for comparison in the database. The refseq database includes: Archaea, Bacteria, Fungi, Invertebrate, Plant, Vertebrate, Mammalian, Vertebrate other and Viral. The HMP1-II database includes: skin, oral, vaginal and gut.
 
@@ -174,6 +174,11 @@ Usage of  command line running
                          Refseq/Refseqrep
                          Refseq/HMP
 
+
+    -c  <compact fasta file> : Input your fasta file to build your own compact database.
+
+	-r  <database output dir> :  Output your own compact database to file at <database output dir>.
+
 	-s   <kingdom|option> :  This argument is optional. It limits the is a optionthe subgroups for comparison. You can choose the kingdom to reduce the computing time. But it is ddifferent in different database.
 
 		Refseq :
@@ -187,9 +192,18 @@ Usage of  command line running
 
 > - Examples:
 
-    ./CRAFT.sh -i testdata/Testing_Refseq_representativegenome_TriboliumcastaneumstrainGeorgiaGA2.fna.gz -o resources/app/output/ -d Refseq/Refseqrep -s all
 
-    ./CRAFT.sh -i testdata/Testing-Metagenome-HumanGut-ERR011201.fna.gz -o resources/app/output/ -d Refseq/HMP -s all
+    Load Refseqrep database to compare the input fasta file:
+        ./CRAFT.sh -i testdata/Testing_Refseq_representativegenome_TriboliumcastaneumstrainGeorgiaGA2.fna.gz -o resources/app/output/ -d Refseq/Refseqrep -s all
+
+    Load HMP database to compare the input fasta file:
+        ./CRAFT.sh -i testdata/Testing-Metagenome-HumanGut-ERR011201.fna.gz -o resources/app/output/ -d Refseq/HMP -s all
+
+    Build your own compact database:
+        ./CRAFT.sh -c testdata/build/GCF_000006665.1_ASM666v1_genomic.fna.gz,testdata/build/GCF_000006925.2_ASM692v2_genomic.fna.gz,testdata/build/GCF_000007445.1_ASM744v1_genomic.fna.gz,testdata/build/GCF_000008865.2_ASM886v2_genomic.fna.gz,testdata/build/GCF_000012005.1_ASM1200v1_genomic.fna.gz -r ./my_database -o resources/app/
+
+    Load your prebuilt database to compare the input fasta file:
+        ./CRAFT.sh -i testdata/Testing-Metagenome-HumanGut-ERR011201.fna.gz -o resources/app/output/ -d my_database
 
 Contacts and bug reports
 ========================
