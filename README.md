@@ -7,7 +7,7 @@
 
 Thank you for downloading CRAFT, a tool for Compact Representations of large-scale Alignment-Free genomic/metagenomic sequences daTabase and fast sequence comparisons between sequencing data/long genomic sequences and the compact database.
 
-**Description of the framework of CRAFT:**
+## **Description of the framework of CRAFT:**
 
 <p align="center">
   <img src="./image/CRAFTworkflow.png"/ width="600" height="300">
