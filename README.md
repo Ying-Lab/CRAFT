@@ -76,7 +76,7 @@ Guidance on Graphical User Interface
 ------------------------
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/craft.jpg"/ width="600" height="550">
+  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/craft.png"/ width="600" height="550">
 </p>
 The graphical user interface has the layout shown in the above figure, containing five parts in terms of functionality:
 
@@ -97,7 +97,7 @@ The graphical user interface has the layout shown in the above figure, containin
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) : Save the current figure.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.jpg"/ width="600" height="550">
+  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.png"/ width="600" height="550">
 </p>
 
 5、	Blue area in following figure：The blue area gives the tracking of running steps of distance measures.
@@ -109,13 +109,13 @@ The graphical user interface has the layout shown in the above figure, containin
 6、  On this page you can build your own database and calculate the CRAFT distance between each genome pair in the database. It is also possible to input a new genome to get the top 10-nearest neighbors in the database.The built database is stored as My_Database/ My_Database by default.Using the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import_but.jpg) button to switch to the interface which can load prebuilt database.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/prebuilt.jpg"/ width="600" height="550">
+  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/prebuilt.png"/ width="600" height="550">
 </p>
 
 7、 In this interface you can import your prebuilt database. It is also possible to input a new genome to get the top 10-nearest neighbors in the database.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import.jpg"/ width="600" height="550">
+  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import.png"/ width="600" height="550">
 </p>
 
 8、  The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
@@ -144,7 +144,7 @@ Here we go through a toy example step-by-step.  You can find a folder named "dat
 Once the visualized results have been plotted, the figure can be saved locally by clicking the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) button or through the popup menu by right-clicking the mouse.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.jpg"/ width="600" height="550">
+  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.png"/ width="600" height="550">
 </p>
 
 <p align="center">
