@@ -82,11 +82,11 @@ The graphical user interface has the layout shown in the above figure, containin
 
 1、	Red area: Start new session, input query file and run the comparison:
 
-![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion.jpg)  :  Select a new database for query.
+![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg)  :  Select a new database for query.
 
-![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/add.jpg)  :  Select the query file. The sequence data can be either long genomic sequences or shotgun sequence reads from NGS technologies, with the file extension 'fasta','fasta.gz','fasta.bz2','fa','fa.gz','fa.bz2','fna','fna.gz','fna.bz2','fastq','fastq.gz','fastq.bz2','fq','fq.gz','fq.bz2'
+![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/add_but.jpg)  :  Select the query file. The sequence data can be either long genomic sequences or shotgun sequence reads from NGS technologies, with the file extension 'fasta','fasta.gz','fasta.bz2','fa','fa.gz','fa.bz2','fna','fna.gz','fna.bz2','fastq','fastq.gz','fastq.bz2','fq','fq.gz','fq.bz2'
 
-![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run.jpg)   :  Run CRAFT to compare the query file with the selected database.
+![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run_but.jpg)   :  Run CRAFT to compare the query file with the selected database.
 
 2、Green area : Select the database to compare or build your database to compare.
 
@@ -94,10 +94,10 @@ The graphical user interface has the layout shown in the above figure, containin
 
 4、Purple area : Three visualizations of the comparing result : including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved locally by clicking the button or right-clicking the mouse.
 
-![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save.jpg) : Save the current figure.
+![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) : Save the current figure.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveall.jpg"/ width="600" height="550">
+  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.jpg"/ width="600" height="550">
 </p>
 
 5、	Blue area in following figure：The blue area gives the tracking of running steps of distance measures.
@@ -126,13 +126,13 @@ An  Example of Graphical User Interface
 
 Here we go through a toy example step-by-step.  You can find a folder named "data" in the unzipped folder.
 
-1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion.jpg) to start a new session.
+1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
 2、Select Refseq representative/complete database or the HMP1-II dataset.
 
-3、Click the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/add.jpg) and select the testing data under "data" folder. And click the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run.jpg). The results in text format will be saved in folder with the naming of resources/app/output/. When same query file is input again, CRAFT will reload the resulting file and directly offer the visualization figures.
+3、Click the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/add_but.jpg) and select the testing data under "data" folder. And click the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run_but.jpg). The results in text format will be saved in folder with the naming of resources/app/output/. When same query file is input again, CRAFT will reload the resulting file and directly offer the visualization figures.
 
-4、The result is available in visualized plots and would be saved with right clicking of mouse or clicking the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save.jpg) on left bottom. Also, we can track the progress through the console in the bottom panel.The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
+4、The result is available in visualized plots and would be saved with right clicking of mouse or clicking the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) on left bottom. Also, we can track the progress through the console in the bottom panel.The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
 
 <Notice: The query filename can't include space character.>
 ------------------------
@@ -141,7 +141,7 @@ Here we go through a toy example step-by-step.  You can find a folder named "dat
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/queryfile.jpg"/ width="600" height="550">
 </p>
 
-Once the visualized results have been plotted, the figure can be saved locally by clicking the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save.jpg) button or through the popup menu by right-clicking the mouse.
+Once the visualized results have been plotted, the figure can be saved locally by clicking the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) button or through the popup menu by right-clicking the mouse.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.jpg"/ width="600" height="550">
