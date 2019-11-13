@@ -106,7 +106,7 @@ The graphical user interface has the layout shown in the above figure, containin
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/track.jpg"/ width="600" height="550">
 </p>
 
-6、  On this page you can build your own database and calculate the CRAFT distance between each genome pair in the database. It is also possible to input a new genome to get the top 10-nearest neighbors in the database.The built database is stored as My_Database/ My_Database by default.Using the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import_but.jpg) button to switch to the interface which can load prebuilt database.
+6、  On this page you can build your own database and calculate the CRAFT distance between each genome pair in the database. It is also possible to input a new genome to get the top 10-nearest neighbors in the database.The built database is stored as My_Database/ My_Database by default.Using the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import_but.png) button to switch to the interface which can load prebuilt database.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/prebuilt.png"/ width="600" height="550">
@@ -127,6 +127,7 @@ An  Example of Graphical User Interface
 **Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder.**
 
 **Query HTS genomic data in the three compressed genomic sequence databases **
+
 1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
 2、Select Refseq representative/complete database or the HMP1-II dataset.
@@ -136,26 +137,29 @@ An  Example of Graphical User Interface
 4、The result is available in visualized plots and would be saved with right clicking of mouse or clicking the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) on left bottom. Also, we can track the progress through the console in the bottom panel.The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
 
 **Build your compact database.**
+
 1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
 2、Select build your compact database.
 
-3、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/choose_but.jpg) to choose your genomes data.
+3、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/choose_but.png) to choose your genomes data.
 
 4、Enter the output name where your database is saved and click the button to build the database.
 
-5、After building the database, you can click the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/compute_but.jpg) button to calculate the distance between two genes in the database and ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.jpg) for query HTS genomic data in this database.
+5、After building the database, you can click the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/compute_but.png) button to calculate the distance between two genes in the database and ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.png) for query HTS genomic data in this database.
 
 **Import your compact database.**
+
 1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
 2、Select build your compact database.
 
 3、Click "Import Your Prebuilt Compact database" to conversion interface.
 
-4、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/load_but.jpg) to load your Prebuilt database.
+4、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/load_but.png) to load your Prebuilt database.
 
-5、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.jpg) for query HTS genomic data in this database.
+5、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.png) for query HTS genomic data in this database.
+
 <Notice: The query filename can't include space character.>
 ------------------------
 
