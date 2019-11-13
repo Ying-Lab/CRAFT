@@ -51,7 +51,7 @@ CRAFT can be run directly after decompressing the .zip archive on Windows and Li
 Direct Running on Windows
 ------------------------
 CRAFT has been tested on Windows (Win7,Win8 and Win10)
-> 1. Download the Windows Version of CRAFT  from  [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadui.md).
+> 1. Download the Windows Version of CRAFT from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadGUI.md).
 > 2. Unzip it.
 > 3. Within the folder, double-click **CRAFT.exe**.
 <p align="center">
@@ -62,7 +62,7 @@ CRAFT has been tested on Windows (Win7,Win8 and Win10)
 Direct Running  on Linux
 ------------------------
 CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 and Oracle Server 7.6). Because of system difference of Linux, some dll files might not be included. We have included the missing dll files during our testing. If other dll files are require, they can be downloaded [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/linux-so). And copy the missing dll to CRAFT_linux folder.
-> 1. Download the Linux Version of CRAFT  from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadui.md ).
+> 1. Download the Linux Version of CRAFT  from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadGUI.md ).
 > 2. Unzip it.
 > 3. Use commandline : "cd CRAFT-linux-x64" and "./CRAFT" to start running CRAFT.( **Please run CRAFT with command line instead of double clicks on Linux.** )
 <p align="center">
@@ -124,8 +124,9 @@ An  Example of Graphical User Interface
 ------------------------
 
 
-Here we go through a toy example step-by-step.  You can find a folder named "data" in the unzipped folder.
+**Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder.**
 
+**Query HTS genomic data in the three compressed genomic sequence databases **
 1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
 2、Select Refseq representative/complete database or the HMP1-II dataset.
@@ -134,6 +135,27 @@ Here we go through a toy example step-by-step.  You can find a folder named "dat
 
 4、The result is available in visualized plots and would be saved with right clicking of mouse or clicking the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) on left bottom. Also, we can track the progress through the console in the bottom panel.The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
 
+**Build your compact database.**
+1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
+
+2、Select build your compact database.
+
+3、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/choose_but.jpg) to choose your genomes data.
+
+4、Enter the output name where your database is saved and click the button to build the database.
+
+5、After building the database, you can click the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/compute_but.jpg) button to calculate the distance between two genes in the database and ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.jpg) for query HTS genomic data in this database.
+
+**Import your compact database.**
+1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
+
+2、Select build your compact database.
+
+3、Click "Import Your Prebuilt Compact database" to conversion interface.
+
+4、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/load_but.jpg) to load your Prebuilt database.
+
+5、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.jpg) for query HTS genomic data in this database.
 <Notice: The query filename can't include space character.>
 ------------------------
 
