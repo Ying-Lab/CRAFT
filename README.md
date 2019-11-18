@@ -10,7 +10,7 @@ Thank you for downloading CRAFT, a tool for Compact Representations of large-sca
 **Description of the framework of CRAFT:**
 
 <p align="center">
-  <img src="./new_img/CRAFTworkflow.png"/ width="600" height="300">
+  <img src="./new_img/CRAFTworkflow.png"/ width="600" >
 </p>
 
  CRAFT includes two key processing steps:*embedding* and*dissimilarity*.
