@@ -10,7 +10,7 @@ Thank you for downloading CRAFT, a tool for Compact Representations of large-sca
 **Description of the framework of CRAFT:**
 
 <p align="center">
-  <img src="./new_img/CRAFTworkflow.png"/ width="600" height="300">
+  <img src="./new_img/CRAFTworkflow.pdf"/ width="600" height="300">
 </p>
 
 CRAFT is composed of two modules:
@@ -126,15 +126,15 @@ An  Example of Graphical User Interface
 ------------------------
 
 
-**Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder.**
+**Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder.
 
-**Query HTS genomic data in the three compressed genomic sequence databases **
+Query HTS genomic data in the three compressed genomic sequence databases **
 
 1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
-2、Select Refseq representative NCBI assembly database or the HMP1-II dataset.
+2、Select Refseq representative, NCBI assembly or the HMP1-II.
 
-3、Click the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/add_but.jpg) and select the testing data under "data" folder. And click the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run_but.jpg). The results in text format will be saved in folder with the naming of resources/app/output/. When same query file is input again, CRAFT will reload the resulting file and directly offer the visualization figures.
+3、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/add_but.jpg) and select the testing data under "testdata" folder. And click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run_but.jpg). The results in text format will be saved in folder with the naming of resources/app/output/. When same query file is input again, CRAFT will reload the resulting file and directly offer the visualization figures.
 
 4、The result is available in visualized plots and would be saved with right clicking of mouse or clicking the button ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) on left bottom. Also, we can track the progress through the console in the bottom panel.The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
 
@@ -146,9 +146,9 @@ An  Example of Graphical User Interface
 
 3、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/choose_but.png) to choose your genomes data.
 
-4、Enter the output name where your database is saved and click the button to build the database.
+4、Enter the output name where your database will be saved and click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/build_but.png) to build the database.
 
-5、After building the database, you can click the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/compute_but.png) button to calculate the distance between two genes in the database and ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.png) for query HTS genomic data in this database.
+5、After building the database, you can click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/compute_but.png) to calculate the distance between two genes in the database and ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.png) for query HTS genomic data in this database.
 
 **Import your compact database.**
 
