@@ -10,14 +10,12 @@ Thank you for downloading CRAFT, a tool for Compact Representations of large-sca
 **Description of the framework of CRAFT:**
 
 <p align="center">
-  <img src="./new_img/CRAFTworkflow.pdf"/ width="600" height="300">
+  <img src="./new_img/CRAFTworkflow.png"/ width="600" height="300">
 </p>
 
-CRAFT is composed of two modules:
+ CRAFT includes two key processing steps:*embedding* and*dissimilarity*.
 
-(A)	Precompute the compact representations of genomic/metagenomic databases. The compact databases were precomputed to embedding vectors and stored in CRAFT with the following steps: count the co-occurred k-mers of the query sequences with sliding window; based on the co-occurrence of context k-mers, each k-mer is tranformed to a vector (embedding). Current CRAFT stored Refseq representative genome database, NCBI assembly genome database and HMP1-II metagenome dataset.
-
-(B)	Fast query for N-nearest neighbors in databases for the input DNA data. When a user input a nucleotide sequencing data or a long DNA sequence, the query sequence(s) will be transformed to embedding vector and calculate the distance with the reference database, and output the top N-nearest neighbors in the database. When a user input the query of an unknown sequencing data or a long genomic sequence, CRAFT fast returns the top 10 nearest neighbors from the precomputed compact database which has smallest dissimilarity with the query data.
+  Given a genomic/metagenomic sequence as input,*embedding* learns its compact representation by mapping nucleotide sequences into low-dimensional space. In brief, CRAFT counts the co-occurred *k*-mers of the query sequence with *1*-bp step-size sliding windows. Based upon the co-occurrence of adjacent *k*-mers, each *k*-mer is transformed to a vector using the GloVe algorithm[1]. After that, *dissimilarity* calculates the dissimilarities between the query sequence and the sequences in the archived repositories, in terms of their learned compact representations.
 
 CRAFT compacts representation of reference sequences with GloVe[1], an unsupervised learning algorithm for obtaining vector representations for words. CRAFT works with sequence data, both long genomic sequences and shotgun sequence reads from NGS technologies, embeds sequences into vector representation for easy storage and comparison.
 
