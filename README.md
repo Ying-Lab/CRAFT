@@ -124,9 +124,9 @@ An  Example of Graphical User Interface
 ------------------------
 
 
-**Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder.
+**Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder. **
 
-Query HTS genomic data in the three compressed genomic sequence databases **
+**Query HTS genomic data in the three compressed genomic sequence databases. **
 
 1、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg) to start a new session.
 
@@ -162,10 +162,6 @@ Query HTS genomic data in the three compressed genomic sequence databases **
 
 <Notice: The query filename can't include space character.>
 ------------------------
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/queryfile.jpg"/ width="600" height="550">
-</p>
 
 Once the visualized results have been plotted, the figure can be saved locally by clicking the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) button or through the popup menu by right-clicking the mouse.
 
@@ -209,9 +205,9 @@ Usage of  command line running
 	-o   <output dir> : The folder for kmc, embedding adn query results to file at <output dir>.
 
 	-d   <database>   :  The compact database for comparison with the query sequences.You can use different database in Refseq floder or your prebulit database. E.g :
-                         Refseq/Refseq
-                         Refseq/Refseqrep
-                         Refseq/HMP
+                         Refseq/Refseq ( NCBI assembly database )
+                         Refseq/Refseqrep ( Refseq representative database )
+                         Refseq/HMP ( Human Microbiome Project )
 
 
     -c  <path file> : A file that lists the paths of the fna file.
@@ -219,7 +215,7 @@ Usage of  command line running
 	-r  <database output name> :  Output your own compact database to file at <database output namee>.
 
 	-s   <kingdom|option> :  This argument is optional.
-	    It limits the is a option the subgroups for comparison. You can choose the kingdom to reduce the computing time. But it is different in different database.
+	                         It limits the is a option the subgroups for comparison. You can choose the kingdom to reduce the computing time. But it is different in different database.
 
 		Refseq :
 		    1. all 2. archaea 3. bacteria 4. fungi 5. invertebrate 6. plant
