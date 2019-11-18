@@ -10,12 +10,12 @@ Thank you for downloading CRAFT, a tool for Compact Representations of large-sca
 **Description of the framework of CRAFT:**
 
 <p align="center">
-  <img src="./new_img/CRAFTworkflow.png"/ width="600" height="300">
+  <img src="./new_img/CRAFTworkflow.png"/ width="600" >
 </p>
 
- CRAFT includes two key processing steps:*embedding* and*dissimilarity*.
+ **CRAFT includes two key processing steps: *embedding* and *dissimilarity*.**
 
-  Given a genomic/metagenomic sequence as input,*embedding* learns its compact representation by mapping nucleotide sequences into low-dimensional space. In brief, CRAFT counts the co-occurred *k*-mers of the query sequence with *1*-bp step-size sliding windows. Based upon the co-occurrence of adjacent *k*-mers, each *k*-mer is transformed to a vector using the GloVe algorithm[1]. After that, *dissimilarity* calculates the dissimilarities between the query sequence and the sequences in the archived repositories, in terms of their learned compact representations.
+  Given a genomic/metagenomic sequence as input, *embedding* learns its compact representation by mapping nucleotide sequences into low-dimensional space. In brief, CRAFT counts the co-occurred *k*-mers of the query sequence with *1*-bp step-size sliding windows. Based upon the co-occurrence of adjacent *k*-mers, each *k*-mer is transformed to a vector using the GloVe algorithm[1]. After that, *dissimilarity* calculates the dissimilarities between the query sequence and the sequences in the archived repositories, in terms of their learned compact representations.
 
 CRAFT compacts representation of reference sequences with GloVe[1], an unsupervised learning algorithm for obtaining vector representations for words. CRAFT works with sequence data, both long genomic sequences and shotgun sequence reads from NGS technologies, embeds sequences into vector representation for easy storage and comparison.
 
@@ -32,11 +32,11 @@ Three pre-computed compact databases
 
 Currently, we pre-compacted the three databases
 
-(1) All the 139,576 NCBI assembly nucleotide genomes, updated by June, 2018. The size of the database is compacted from 829.60GB(.fa) to 3GB.--*(Since this database requires 3GB of space, it is not included in the zip file. During the running of CRAFT, if the user selected the button of "NCBI assembly", the download webpage will be automatic linked or [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/download-refseq.md)  to download and save in ./CRAFT-linux-x64/Refseq folder or ./CRAFT_wins_1.0/Refseq. )*
+(1) All the 139,576 NCBI assembly nucleotide genomes, updated by June, 2018. The size of the database is compacted from 829.60GB(.fa) to 2.93GB.--*(Since this database requires 2.93GB of space, it is not included in the zip file. During the running of CRAFT, if the user selected the button of "NCBI assembly", the download webpage will be automatic linked or [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/download-refseq.md)  to download and save in ./CRAFT-linux-x64/Refseq folder or ./CRAFT_wins_1.0/Refseq. )*
 
-(2)The 7,106 Refseq representative nucleotide genomes, updated by June, 2018. The size of the database is compacted from 376.38GB(.fa) to 148M.--*(This database is included in the zip file.)*
+(2)The 7,106 Refseq representative nucleotide genomes, updated by June, 2018. The size of the database is compacted from 376.38GB(.fa) to 152.67M.--*(This database is included in the zip file.)*
 
-(3)The 2,355 HMP 1-II metagenomic samples, which includes **309 skin samples, 234 Vaginal samples, 1,259 Oral samples and 553 Gutsamples,** from 7.13TB (.sra) to 50.4 MB. The sample information is [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/HMP1-II-info.txt).--*(This database is included in the zip file.)*
+(3)The 2,355 HMP 1-II metagenomic samples, which includes **309 skin samples, 234 Vaginal samples, 1,259 Oral samples and 553 Gutsamples,** from 7.13TB (.sra) to 50.40 MB. The sample information is [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/HMP1-II-info.txt).--*(This database is included in the zip file.)*
 
 
 Direct Running
@@ -90,7 +90,7 @@ The graphical user interface has the layout shown in the above figure, containin
 
 3、Yellow area : Select the subgroup for comparison in the database. Refseq representative database and  NCBI assembly database includes: Archaea, Bacteria, Fungi, Invertebrate, Plant, Vertebrate, Mammalian, Vertebrate other and Viral. The HMP1-II dataset includes: skin, oral, vaginal and gut.
 
-4、Black area : Select whether to use the branch and bound algorithm only in  NCBI assembly database.( To speed up the search, the default is selected. )
+4、Black area : Select whether to use the branch and bound algorithm only in  NCBI assembly database. (  To speed up the search, the default is selected. )
 
 5、Purple area : Three visualizations of the comparing result : including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved locally by clicking the button or right-clicking the mouse.
 
@@ -106,7 +106,7 @@ The graphical user interface has the layout shown in the above figure, containin
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/track.jpg"/ width="600" height="550">
 </p>
 
-7、  On this page you can build your own database and calculate the CRAFT distance between each genome pair in the database. It is also possible to input a new genome to get the top 10-nearest neighbors in the database.The built database is stored as My_Database/ My_Database by default.Using the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import_but.png) button to switch to the interface which can load prebuilt database.
+7、 If select build your compact database in green area, you can build your own database and calculate the CRAFT distance between each genome pair in the database. It is also possible to input a new genome to get the top 10-nearest neighbors in the database.The built database is stored as My_Database/ My_Database by default.Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import_but.png) to switch to the interface which can load prebuilt database.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/prebuilt.png"/ width="600" height="550">
