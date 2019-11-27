@@ -65,9 +65,9 @@ CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 an
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/craft.png"/ width="600" height="550">
 </p>
-The graphical user interface has the layout shown in the above figure, containing five parts in terms of functionality:
+**The graphical user interface has the layout shown in the above figure, containing five parts in terms of functionality**:
 
-**1、	Red area: Start new session, input query file and run the comparison:**
+**1、	Red area: Start new session, input query file and run the comparison**:
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg)  :  Select a new database for query for the nearest neighbors of the input sequence.
 
@@ -75,13 +75,13 @@ The graphical user interface has the layout shown in the above figure, containin
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/run_but.jpg)   :  Run CRAFT to compare the query file with the selected database.
 
-2、Green area : Select the pre-compact database or build the compact representation your own database to search for the best matches (nearest neighbors) of the query sequences.
+**2、Green area : Select the pre-compact database or build the compact representation your own database to search for the best matches (nearest neighbors) of the query sequences**.
 
-3、Yellow area : Select the major taxonomical subgroup in the database for comparison. Refseq representative database and  NCBI assembly database includes: Archaea, Bacteria, Fungi, Invertebrate, Plant, Vertebrate, Mammalian, Vertebrate other and Viral. The HMP1-II dataset includes: skin, oral, vaginal and gut.
+**3、Yellow area : Select the major taxonomical subgroup in the database for comparison. Refseq representative database and  NCBI assembly database includes: Archaea, Bacteria, Fungi, Invertebrate, Plant, Vertebrate, Mammalian, Vertebrate other and Viral. The HMP1-II dataset includes: skin, oral, vaginal and gut**.
 
-4、Black area : Select whether to use the branch and bound algorithm to speed up the searching with the price of accuracy, which is optional for in  NCBI assembly database. ( The default is selected.)
+**4、Black area : Select whether to use the branch and bound algorithm to speed up the searching with the price of accuracy, which is optional for in  NCBI assembly database. ( The default is selected.)**
 
-5、Purple area : Three visualizations of the comparing result : including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved to local disk by clicking the button or right-clicking the mouse.
+**5、Purple area : Three visualizations of the comparing result : including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved to local disk by clicking the button or right-clicking the mouse**.
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) : Save the current figure.
 
@@ -89,26 +89,26 @@ The graphical user interface has the layout shown in the above figure, containin
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/saveas.png"/ width="600" height="550">
 </p>
 
-6、	Blue area in the followed figure：The blue area gives the progress of running steps.
+**6、	Blue area in the followed figure：The blue area gives the progress of running steps**.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/track.jpg"/ width="600" height="550">
 </p>
 
-7、 Build you own compact database
-CRAFT offers the interface to build the compact dataset for your own data. If select "build your compact database" in green area, you can load your own data and build the compact database. Then CRAFT can query for the nearest neighbors in your own database with "input query file" or calculate the dissimilarity matrix for samples(genomes) in your own dataset. The built database is stored as My_Database/ My_Database by default.
+**7、 Build you own compact database
+CRAFT offers the interface to build the compact dataset for your own data. If select "build your compact database" in green area, you can load your own data and build the compact database. Then CRAFT can query for the nearest neighbors in your own database with "input query file" or calculate the dissimilarity matrix for samples(genomes) in your own dataset. The built database is stored as My_Database/ My_Database by default**.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/prebuilt.png"/ width="600" height="550">
 </p>
 
-8、 If one dataset has been compressed by CRAFT, then it can be reloaded to CRAFT with "import your prebuilt compact database".
+**8、 If one dataset has been compressed by CRAFT, then it can be reloaded to CRAFT with "import your prebuilt compact database"**.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/import.png"/ width="600" height="550">
 </p>
 
-9、  The compact representation the produced kmer embedding vector and the distance matrix are saved as text format in folder resources/app/output for user's further analysis.
+**9、  The compact representation the produced kmer embedding vector and the distance matrix are saved as text format in folder resources/app/output for user's further analysis**.
 
 ### An  Example of Graphical User Interface
 
