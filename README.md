@@ -77,11 +77,15 @@ CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 an
 
 **2、Green area : Select the pre-compact database or build the compact representation your own database to search for the best matches (nearest neighbors) of the query sequences**.
 
-**3、Yellow area : Select the major taxonomical subgroup in the database for comparison. Refseq representative database and  NCBI assembly database includes: Archaea, Bacteria, Fungi, Invertebrate, Plant, Vertebrate, Mammalian, Vertebrate other and Viral. The HMP1-II dataset includes: skin, oral, vaginal and gut**.
+**3、Yellow area : Select the major taxonomical subgroup in the database for comparison**.
+
+Refseq representative database and  NCBI assembly database includes: Archaea, Bacteria, Fungi, Invertebrate, Plant, Vertebrate, Mammalian, Vertebrate other and Viral. The HMP1-II dataset includes: skin, oral, vaginal and gut.
 
 **4、Black area : Select whether to use the branch and bound algorithm to speed up the searching with the price of accuracy, which is optional for in  NCBI assembly database. ( The default is selected.)**
 
-**5、Purple area : Three visualizations of the comparing result : including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved to local disk by clicking the button or right-clicking the mouse**.
+**5、Purple area : Three visualizations of the comparing result**
+
+Including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved to local disk by clicking the button or right-clicking the mouse**.
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) : Save the current figure.
 
@@ -95,8 +99,9 @@ CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 an
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/track.jpg"/ width="600" height="550">
 </p>
 
-**7、 Build you own compact database
-CRAFT offers the interface to build the compact dataset for your own data. If select "build your compact database" in green area, you can load your own data and build the compact database. Then CRAFT can query for the nearest neighbors in your own database with "input query file" or calculate the dissimilarity matrix for samples(genomes) in your own dataset. The built database is stored as My_Database/ My_Database by default**.
+**7、 Build you own compact database**
+
+CRAFT offers the interface to build the compact dataset for your own data. If select "build your compact database" in green area, you can load your own data and build the compact database. Then CRAFT can query for the nearest neighbors in your own database with "input query file" or calculate the dissimilarity matrix for samples(genomes) in your own dataset. The built database is stored as My_Database/ My_Database by default.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/prebuilt.png"/ width="600" height="550">
