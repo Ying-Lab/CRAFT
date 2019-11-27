@@ -1,13 +1,10 @@
-# **CRAFT**
-**Compact genome Representation towards large-scale**
-
-**Alignment-Free daTabase**
+# **CRAFT：** Compact genome Representation towards large-scale Alignment-Free daTabase
 
 
 
-Thank you for downloading CRAFT, a tool for Compact Representations of large-scale Alignment-Free genomic/metagenomic sequences daTabase and fast sequence comparisons between sequencing data/long genomic sequences and the compact database.
+Thank you for downloading CRAFT, a tool for Compact Representations of large-scale Alignment-Free genomic/metagenomic sequences daTabase and fast sequence comparisons between sequencing data/long genomic sequences and the compact database.CRAFT parses the input genomic/metagenomic sequences, counts the co-occurrences of adjacent k-mer pairs, learns the embeddings, searches against archived repositories by the dissimilarity between the input and the archived sequences in the embedding space, and finally reports the best matches in various ways.
 
-**Description of the framework of CRAFT:**
+**Framework of CRAFT**
 
 <p align="center">
   <img src="./new_img/CRAFTworkflow.png"/ width="600" >
@@ -26,11 +23,10 @@ All the analysis can be performed by simply clicking through well-designed graph
 **<font size="1" face="黑体">[1] Pennington, J., R. Socher, and C. Manning. Glove: Global vectors for word representation. in Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP). 2014.</font>**
 
 
-Three pre-computed compact databases
-============
+## Three pre-computed compact databases
 
 
-Currently, we pre-compacted the three databases
+Currently, we pre-compacted three databases for the fast query of nearest neighbors for the input sequences
 
 (1) All the 139,576 NCBI assembly nucleotide genomes, updated by June, 2018. The size of the database is compacted from 829.60GB(.fa) to 2.93GB.--*(Since this database requires 2.93GB of space, it is not included in the zip file. During the running of CRAFT, if the user selected the button of "NCBI assembly", the download webpage will be automatic linked or [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/download-refseq.md)  to download and save in ./CRAFT-linux-x64/Refseq folder or ./CRAFT_wins_1.0/Refseq. )*
 
@@ -39,15 +35,11 @@ Currently, we pre-compacted the three databases
 (3)The 2,355 HMP 1-II metagenomic samples, which includes **309 skin samples, 234 Vaginal samples, 1,259 Oral samples and 553 Gutsamples,** from 7.13TB (.sra) to 50.40 MB. The sample information is [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/HMP1-II-info.txt).--*(This database is included in the zip file.)*
 
 
-Direct Running
-============
-
-
+## Running on two operation systems
 
 CRAFT can be run directly after decompressing the .zip archive on Windows and Linux operating systems without any installation, extra enviromental settings or configurations.
 
-Direct Running on Windows
-------------------------
+### Running on Windows
 CRAFT has been tested on Windows (Win7,Win8 and Win10)
 > 1. Download the Windows Version of CRAFT from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadGUI.md).
 > 2. Unzip it.
@@ -56,9 +48,7 @@ CRAFT has been tested on Windows (Win7,Win8 and Win10)
 <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/exe.jpg"/ width="600" height="400">
 </p>
 
-
-Direct Running  on Linux
-------------------------
+### Running  on Linux
 CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 and Oracle Server 7.6). Because of system difference of Linux, some dll files might not be included. We have included the missing dll files during our testing. If other dll files are require, they can be downloaded [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/linux-so). And copy the missing dll to CRAFT_linux folder.
 > 1. Download the Linux Version of CRAFT  from [**here**](https://github.com/jiaxingbai/CRAFT/blob/master/downloadGUI.md ).
 > 2. Unzip it.
@@ -67,11 +57,10 @@ CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 an
 <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/exe_linux.jpg"/ width="600" height="400">
 </p>
 
-Usage
-=====
+## Usage
 
-Guidance on Graphical User Interface
-------------------------
+
+### Guidance on Graphical User Interface
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/craft.png"/ width="600" height="550">
@@ -120,8 +109,7 @@ The graphical user interface has the layout shown in the above figure, containin
 
 9、  The text files of the produced kmer embedding vector and the distance matrix are saved in folder resources/app/output for user's further analysis.
 
-An  Example of Graphical User Interface
-------------------------
+### An  Example of Graphical User Interface
 
 
 **Here we go through two toy examples step-by-step.  You can find a folder named "testdata" in the unzipped folder. **
@@ -160,8 +148,8 @@ An  Example of Graphical User Interface
 
 5、Click ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/input_but.png) for query HTS genomic data in this database.
 
-<Notice: The query filename can't include space character.>
-------------------------
+### <Notice: The query filename can't include space character.>
+
 
 Once the visualized results have been plotted, the figure can be saved locally by clicking the ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) button or through the popup menu by right-clicking the mouse.
 
@@ -192,8 +180,7 @@ Once the visualized results have been plotted, the figure can be saved locally b
 
 
 
-Usage of  command line running
-------------------------
+### Usage of  command line running
 
 > Command:   Query data: ./CRAFT.sh  -i < input file > -o < output dir > -d < database > -s < kingdom|option >
              Compact database: ./CRAFT.sh  -c < path file > -r < database output name >  -o < output dir >
@@ -242,8 +229,8 @@ Usage of  command line running
     Load your prebuilt database to compare the input fasta file:
         ./CRAFT.sh -i testdata/Testing-Metagenome-HumanGut-ERR011201.fna.gz -o resources/app/output/ -d my_database
 
-Contacts and bug reports
-========================
+## Contacts and bug reports
+
 
 Please send bug reports, comments, or questions to
 
