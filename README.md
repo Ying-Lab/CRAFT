@@ -3,6 +3,15 @@
 
 Thank you for downloading CRAFT, a tool for Compact Representations of large-scale Alignment-Free genomic/metagenomic sequences daTabase and fast sequence comparisons between sequencing data/long genomic sequences and the compact database.CRAFT parses the input genomic/metagenomic sequences, counts the co-occurrences of adjacent k-mer pairs, learns the embeddings, searches against archived repositories by the dissimilarity between the input and the archived sequences in the embedding space, and finally reports the best matches in various ways.
 
+## Download
+
+Linux:
+[**Baidu Cloud:**](https://pan.baidu.com/share/init?surl=Lj2RsfzyE6jHuPnhLt1wLQ)Fetch Code:8hv0
+[**Google Drive:**](https://drive.google.com/file/d/1limEbG53vvUOqVBTvqIhaxQcUbpDXVK3/view?usp=sharing)
+
+wins
+[**Baidu Cloud:**](https://pan.baidu.com/share/init?surl=m4-nTtExTHszDkOBOSl8Tw)Fetch Code:8uz1
+[**Google Drive:**](https://drive.google.com/file/d/13kBxpnwv_OtwzGP72QY8GJ4R1NFEvjno/view?usp=sharing)
 ## Framework of CRAFT
 
 <p align="center">
@@ -65,7 +74,7 @@ CRAFT has been tested on Linux (Ubuntu14/16/18, Debian 9, CentOS 7, Fedora 29 an
   <img src="https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/craft.png"/ width="600" height="550">
 </p>
 **The graphical user interface has the layout shown in the above figure, containing five parts in terms of functionality**:
-
+.
 **1、	Red area: Start new session, input query file and run the comparison**:
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/newssion_but.jpg)  :  Select a new database for query for the nearest neighbors of the input sequence.
@@ -84,7 +93,7 @@ Refseq representative database and  NCBI assembly database includes: Archaea, Ba
 
 **5、Purple area : Three visualizations of the comparing result**
 
-Including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved to local disk by clicking the button or right-clicking the mouse**.
+Including the distance bar graphe, two dimensional projection using principal coordinate analysis (PCoA) and sequence clustering into a rounded dendrogram by using the neighbor-joining algorithm. Each analysis is shown in the respective tabbed window. The figure can be saved to local disk by clicking the button or right-clicking the mouse.
 
 ![alt tag](https://raw.githubusercontent.com/jiaxingbai/CRAFT/master/new_img/save_but.jpg) : Save the current figure.
 
