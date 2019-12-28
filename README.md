@@ -7,13 +7,13 @@ Thank you for downloading CRAFT, a tool for Compact Representations of large-sca
 
 **Linux:**
 
-[**Baidu Cloud:**](https://pan.baidu.com/s/1URsGlMX-0m4cqkGdTcnH1g)
+[**Baidu Cloud**](https://pan.baidu.com/s/1URsGlMX-0m4cqkGdTcnH1g)
 
 [**Google Drive**](https://drive.google.com/file/d/1limEbG53vvUOqVBTvqIhaxQcUbpDXVK3/view?usp=sharing)
 
 **Wins:**
 
-[**Baidu Cloud:**](https://pan.baidu.com/s/1kdXOhFKeCzpM3IkeeZrGaQ)
+[**Baidu Cloud**](https://pan.baidu.com/s/1kdXOhFKeCzpM3IkeeZrGaQ)
 
 [**Google Drive**](https://drive.google.com/file/d/13kBxpnwv_OtwzGP72QY8GJ4R1NFEvjno/view?usp=sharing)
 
