@@ -1,7 +1,7 @@
 # CRAFT
 ## Compact genome Representation towards large-scale Alignment-Free daTabase
 
-Thank you for downloading CRAFT, a tool for Compact Representations of large-scale Alignment-Free genomic/metagenomic sequences daTabase and fast sequence comparisons between sequencing data/long genomic sequences and the compact database.CRAFT parses the input genomic/metagenomic sequences, counts the co-occurrences of adjacent k-mer pairs, learns the embeddings, searches against archived repositories by the dissimilarity between the input and the archived sequences in the embedding space, and finally reports the best matches in various ways.
+Thank you for downloading CRAFT, a tool for Compact Representations of large-scale Alignment-Free genomic/metagenomic sequences daTabase and fast sequence comparisons between sequencing data/long genomic sequences and the compact database.CRAFT parses the input genomic/metagenomic sequences, counts the co-occurrences of adjacent k-mer pairs, learns the embeddings, searches against archived repositories by the dissimilarity between the input and the archived sequences in the embedding space, and finally reports the best matches in various ways.i
 
 ## Download
 
